@@ -32,7 +32,7 @@ az storage blob upload \
     --container-name "$CONTAINER_NAME" \
     --name "$FILE_NAME" \
     --file "$FILE_PATH" \
-    --account-key $STORAGE_KEY
+    --account-key "$STORAGE_KEY" 
 
 # Check if the upload was successful
 if [ $? -eq 0 ]; then
